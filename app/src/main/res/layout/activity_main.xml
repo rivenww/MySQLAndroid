@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/onConn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="连接测试"
+        android:onClick="onConn"/>
+
+    <Button
+        android:id="@+id/onInsert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="插入测试"
+        android:onClick="onInsert"/>
+
+    <Button
+        android:id="@+id/onDelete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="删除测试"
+        android:onClick="onDelete"/>
+
+    <Button
+        android:id="@+id/onUpdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="修改测试"
+        android:onClick="onUpdate"/>
+
+    <Button
+        android:id="@+id/onQuery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查询测试"
+        android:onClick="onQuery"/>
+
+    <Button
+        android:id="@+id/Service"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="服务测试"
+        android:onClick="Service"/>
+
+</LinearLayout>

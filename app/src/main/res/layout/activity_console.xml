@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"  />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textIP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="IP"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/IP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textPort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="端口"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/Port"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="名称"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textUsr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="用户名"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/Usr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textPw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="密码"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/editPw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="请输入密码"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textDbname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="数据库（选填）"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/Dbname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/connect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="连接"
+                android:onClick="onConn"/>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/editSQL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="请输入SQL语句"
+                android:singleLine="false"/>
+
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发送"
+                android:onClick="onSend"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/console"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text=""
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
